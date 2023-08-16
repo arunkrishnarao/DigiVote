@@ -5,6 +5,9 @@ DigiVote is a School Student Council Program made using C# WinForms with a moder
 Main Menu UI:
 ![alt text](https://github.com/arunkrishnarao/DigiVote/blob/main/1.png?raw=true)
 
+Ballot:
+![alt text](https://github.com/arunkrishnarao/DigiVote/blob/main/3.png?raw=true)
+
 ## Table of Contents
 1. [Setup Election](#setup-election)
 2. [Add Candidates](#add-candidates)
@@ -29,8 +32,6 @@ Once the election is set up, proceed to add all the candidates:
 - Optionally, browse and attach the Symbol of the Candidate.
 - Save the Candidate.
 
-Add Candidates:
-![alt text](https://github.com/arunkrishnarao/DigiVote/blob/main/2.png?raw=true)
 
 ## 3. Conduct Election
 After adding candidates, it's time to conduct the election:
@@ -39,13 +40,8 @@ After adding candidates, it's time to conduct the election:
 - Optionally, choose to enable "None of the above" or "NOTA" option.
 - A secret Security-Key is prompted before casting each vote.
 
-Ballot:
-![alt text](https://github.com/arunkrishnarao/DigiVote/blob/main/3.png?raw=true)
 
 ## 4. End and Save
 When the voting is complete, follow these steps:
 - Use the secret Exit-Key to conclude the election.
 - Choose whether to save the election results in an Text Document.
-
-Results:
-![alt text](https://github.com/arunkrishnarao/DigiVote/blob/main/4.png?raw=true)
