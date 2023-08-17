@@ -34,5 +34,31 @@ namespace DigiVote
                 dataGridView1.Rows.Add("NOTA", votes[i]);
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string text = "";
+            int i;
+
+            text += "Candidates,Votes\n";
+            for (i=0; i<Globals.Election.getCount(); i++)
+            {
+                text += candidates[i].ToString() + ',';
+                text += votes[i].ToString();
+                text += '\n';
+            }
+            if(notaEnabled)
+            {
+                text += "NOTA," + votes[i].ToString();
+            }
+            try
+            {
+                File.WriteAllText("results.csv", text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, " Error");
+            }
+        }
     }
 }

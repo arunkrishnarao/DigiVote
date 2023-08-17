@@ -30,8 +30,15 @@ namespace DigiVote
 
         private void panel1_Click(object sender, EventArgs e)
         {
-            Form ss5 = new Settings();
-            ss5.ShowDialog();
+            if (candidate_cntr == count)
+            {
+                Form ss5 = new Settings();
+                ss5.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show(" Please add all of the candidates", " Error");
+            }
         }
 
         private void panel5_Click(object sender, EventArgs e)
